@@ -1,0 +1,205 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 108, Failures: 24, Errors: 0, Skipped: 0, Time elapsed: 119.226 s <<< FAILURE! - in TestSuite
+io.railflow.blazetest.samples.testng.webdriver.TestHomePage.errorElementAtStart  Time elapsed: 0.037 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//h3[@data-test='error']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69fd1d3a4a0cfacb2187db47aedaf477, findElement {using=xpath, value=//h3[@data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43173/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69fd1d3a4a0cfacb2187db47aedaf477
+	at io.railflow.blazetest.samples.testng.webdriver.TestHomePage.errorElementAtStart(TestHomePage.java:71)
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameEmptyPassword  Time elapsed: 0.072 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Password is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameEmptyPassword(TestLoginEmptyCredentials.java:53)
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameMissingPassword  Time elapsed: 0.061 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Password is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameMissingPassword(TestLoginEmptyCredentials.java:33)
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameEmptyPassword  Time elapsed: 0.048 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameEmptyPassword(TestLoginEmptyCredentials.java:28)
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameInvalidPassword  Time elapsed: 0.05 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameInvalidPassword(TestLoginEmptyCredentials.java:38)
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameMissingPassword  Time elapsed: 0.028 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameMissingPassword(TestLoginEmptyCredentials.java:23)
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.addAndRemove  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e86b87fd9bd575a554c4f6101a253ba, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33871/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e86b87fd9bd575a554c4f6101a253ba
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.addRemoveAndAddAgain  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e86b87fd9bd575a554c4f6101a253ba, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33871/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e86b87fd9bd575a554c4f6101a253ba
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.emptyPassword  Time elapsed: 0.149 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Password is required] but found [Epic sadface: Sorry, this user has been locked out.]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.emptyPassword(TestLoginUserLockout.java:32)
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.missingPassword  Time elapsed: 0.085 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Password is required] but found [Epic sadface: Sorry, this user has been locked out.]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.missingPassword(TestLoginUserLockout.java:27)
+
+io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.userLockedOut  Time elapsed: 0.12 s  <<< FAILURE!
+java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Sorry, this user has been locked out.]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.userLockedOut(TestLoginUserLockout.java:37)
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.addAndRemove  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-bike-light']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c00461c82f1c5859aec45c490c589ae1, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-bike-light']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43903/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c00461c82f1c5859aec45c490c589ae1
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.addRemoveAndAddAgain  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-bike-light']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c00461c82f1c5859aec45c490c589ae1, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-bike-light']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43903/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c00461c82f1c5859aec45c490c589ae1
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.addAndRemove  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c5a918c1206c37248ef79a0227a5b5a, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38457/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5a918c1206c37248ef79a0227a5b5a
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.addRemoveAndAddAgain  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c5a918c1206c37248ef79a0227a5b5a, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-bolt-t-shirt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38457/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5a918c1206c37248ef79a0227a5b5a
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.addAndRemove  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7c154b2b1e3abb1177d74729ffc3a3a, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46331/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7c154b2b1e3abb1177d74729ffc3a3a
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.addRemoveAndAddAgain  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7c154b2b1e3abb1177d74729ffc3a3a, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-backpack']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46331/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7c154b2b1e3abb1177d74729ffc3a3a
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.image  Time elapsed: 0.021 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg]
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.addAndRemove  Time elapsed: 0.011 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-bike-light']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc530422152e8cc1336b3147c1a72f5d, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-bike-light']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34899/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc530422152e8cc1336b3147c1a72f5d
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.addRemoveAndAddAgain  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-bike-light']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc530422152e8cc1336b3147c1a72f5d, findElement {using=xpath, value=//button[@id='add-to-cart-sauce-labs-bike-light']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34899/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc530422152e8cc1336b3147c1a72f5d
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.image  Time elapsed: 0.021 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg]
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.addAndRemove  Time elapsed: 0.038 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='remove-sauce-labs-bolt-t-shirt']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fce7ee55769f5f60f6dc35915d31bed, findElement {using=xpath, value=//button[@id='remove-sauce-labs-bolt-t-shirt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35841/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fce7ee55769f5f60f6dc35915d31bed
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.addRemoveAndAddAgain  Time elapsed: 0.035 s  <<< FAILURE!
+java.lang.AssertionError: 
+Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='remove-sauce-labs-bolt-t-shirt']"}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-32-generic', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fce7ee55769f5f60f6dc35915d31bed, findElement {using=xpath, value=//button[@id='remove-sauce-labs-bolt-t-shirt']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35841/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fce7ee55769f5f60f6dc35915d31bed
+
+io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.image  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg]
+

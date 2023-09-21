@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt">
+        <methods>
+          <include name="addRemoveAndAddAgain"/>
+          <include name="afterEach"/>
+          <include name="beforeEach"/>
+          <include name="addAndRemove"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout">
+        <methods>
+          <include name="emptyPassword"/>
+          <include name="userLockedOut"/>
+          <include name="missingPassword"/>
+          <include name="afterEach"/>
+          <include name="beforeEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight">
+        <methods>
+          <include name="afterEach"/>
+          <include name="addRemoveAndAddAgain"/>
+          <include name="image"/>
+          <include name="beforeEach"/>
+          <include name="addAndRemove"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt">
+        <methods>
+          <include name="addRemoveAndAddAgain"/>
+          <include name="image"/>
+          <include name="beforeEach"/>
+          <include name="afterEach"/>
+          <include name="addAndRemove"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput">
+        <methods>
+          <include name="beforeEach"/>
+          <include name="afterEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory">
+        <methods>
+          <include name="afterEach"/>
+          <include name="beforeEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials">
+        <methods>
+          <include name="missingUsernameInvalidPassword"/>
+          <include name="missingUsernameEmptyPassword"/>
+          <include name="missingUsernameMissingPassword"/>
+          <include name="invalidUsernameMissingPassword"/>
+          <include name="afterEach"/>
+          <include name="beforeEach"/>
+          <include name="invalidUsernameEmptyPassword"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials">
+        <methods>
+          <include name="beforeEach"/>
+          <include name="afterEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack">
+        <methods>
+          <include name="addRemoveAndAddAgain"/>
+          <include name="beforeEach"/>
+          <include name="addAndRemove"/>
+          <include name="afterEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton">
+        <methods>
+          <include name="beforeEach"/>
+          <include name="afterEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess">
+        <methods>
+          <include name="beforeEach"/>
+          <include name="afterEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestHomePage">
+        <methods>
+          <include name="beforeEach"/>
+          <include name="afterEach"/>
+          <include name="errorElementAtStart"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestHomePage -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight">
+        <methods>
+          <include name="beforeEach"/>
+          <include name="addRemoveAndAddAgain"/>
+          <include name="afterEach"/>
+          <include name="addAndRemove"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory">
+        <methods>
+          <include name="beforeEach"/>
+          <include name="afterEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput">
+        <methods>
+          <include name="afterEach"/>
+          <include name="beforeEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput -->
+      <class name="io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack">
+        <methods>
+          <include name="addRemoveAndAddAgain"/>
+          <include name="image"/>
+          <include name="beforeEach"/>
+          <include name="addAndRemove"/>
+          <include name="afterEach"/>
+        </methods>
+      </class> <!-- io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

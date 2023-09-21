@@ -1,0 +1,1752 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>84/24/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 21 21:41:22 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>118 seconds (118915 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.addAndRemove()'><b>addAndRemove</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e86b87fd9bd575a554c4f6101a253ba, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33871/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e86b87fd9bd575a554c4f6101a253ba
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1618230491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1618230491'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e86b87fd9bd575a554c4f6101a253ba, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33871/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e86b87fd9bd575a554c4f6101a253ba
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack@43bd930a</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.addAndRemove()'><b>addAndRemove</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c00461c82f1c5859aec45c490c589ae1, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43903/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c00461c82f1c5859aec45c490c589ae1
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1914526580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1914526580'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c00461c82f1c5859aec45c490c589ae1, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43903/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c00461c82f1c5859aec45c490c589ae1
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight@33723e30</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.addAndRemove()'><b>addAndRemove</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c5a918c1206c37248ef79a0227a5b5a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38457/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5a918c1206c37248ef79a0227a5b5a
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace165631567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace165631567'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c5a918c1206c37248ef79a0227a5b5a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38457/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5a918c1206c37248ef79a0227a5b5a
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt@64f6106c</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.addAndRemove()'><b>addAndRemove</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7c154b2b1e3abb1177d74729ffc3a3a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46331/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7c154b2b1e3abb1177d74729ffc3a3a
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2058526846", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2058526846'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7c154b2b1e3abb1177d74729ffc3a3a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46331/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7c154b2b1e3abb1177d74729ffc3a3a
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack@5891e32e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.addAndRemove()'><b>addAndRemove</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc530422152e8cc1336b3147c1a72f5d, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34899/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc530422152e8cc1336b3147c1a72f5d
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace604976394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace604976394'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc530422152e8cc1336b3147c1a72f5d, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34899/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc530422152e8cc1336b3147c1a72f5d
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:111)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight@cb0ed20</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.addAndRemove()'><b>addAndRemove</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fce7ee55769f5f60f6dc35915d31bed, findElement {using=xpath, value=//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35841/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fce7ee55769f5f60f6dc35915d31bed
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.removeFromCart(TestShoppingCartBase.java:80)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:112)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1547521797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1547521797'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fce7ee55769f5f60f6dc35915d31bed, findElement {using=xpath, value=//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35841/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fce7ee55769f5f60f6dc35915d31bed
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.removeFromCart(TestShoppingCartBase.java:80)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addAndRemove(TestShoppingCartBase.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt@8e24743</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.addRemoveAndAddAgain()'><b>addRemoveAndAddAgain</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e86b87fd9bd575a554c4f6101a253ba, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33871/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e86b87fd9bd575a554c4f6101a253ba
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245386411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace245386411'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e86b87fd9bd575a554c4f6101a253ba, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33871/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e86b87fd9bd575a554c4f6101a253ba
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack@43bd930a</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.addRemoveAndAddAgain()'><b>addRemoveAndAddAgain</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c00461c82f1c5859aec45c490c589ae1, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43903/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c00461c82f1c5859aec45c490c589ae1
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1460139539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1460139539'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c00461c82f1c5859aec45c490c589ae1, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43903/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c00461c82f1c5859aec45c490c589ae1
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight@33723e30</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.addRemoveAndAddAgain()'><b>addRemoveAndAddAgain</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c5a918c1206c37248ef79a0227a5b5a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38457/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5a918c1206c37248ef79a0227a5b5a
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1854922009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1854922009'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c5a918c1206c37248ef79a0227a5b5a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38457}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38457/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5a918c1206c37248ef79a0227a5b5a
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt@64f6106c</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.addRemoveAndAddAgain()'><b>addRemoveAndAddAgain</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7c154b2b1e3abb1177d74729ffc3a3a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46331/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7c154b2b1e3abb1177d74729ffc3a3a
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487543666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1487543666'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7c154b2b1e3abb1177d74729ffc3a3a, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-backpack&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46331/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c7c154b2b1e3abb1177d74729ffc3a3a
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack@5891e32e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.addRemoveAndAddAgain()'><b>addRemoveAndAddAgain</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc530422152e8cc1336b3147c1a72f5d, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34899/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc530422152e8cc1336b3147c1a72f5d
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace740120508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace740120508'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc530422152e8cc1336b3147c1a72f5d, findElement {using=xpath, value=//button[@id=&apos;add-to-cart-sauce-labs-bike-light&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34899}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34899/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cc530422152e8cc1336b3147c1a72f5d
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addToCart(TestShoppingCartBase.java:66)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:117)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight@cb0ed20</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.addRemoveAndAddAgain()'><b>addRemoveAndAddAgain</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fce7ee55769f5f60f6dc35915d31bed, findElement {using=xpath, value=//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35841/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fce7ee55769f5f60f6dc35915d31bed
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.removeFromCart(TestShoppingCartBase.java:80)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:118)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812681178", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1812681178'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fce7ee55769f5f60f6dc35915d31bed, findElement {using=xpath, value=//button[@id=&apos;remove-sauce-labs-bolt-t-shirt&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35841/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fce7ee55769f5f60f6dc35915d31bed
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.removeFromCart(TestShoppingCartBase.java:80)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.addRemoveAndAddAgain(TestShoppingCartBase.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt@8e24743</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.emptyPassword()'><b>emptyPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Password is required] but found [Epic sadface: Sorry, this user has been locked out.]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.emptyPassword(TestLoginUserLockout.java:32)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172707268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172707268'><pre>java.lang.AssertionError: expected [Epic sadface: Password is required] but found [Epic sadface: Sorry, this user has been locked out.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.emptyPassword(TestLoginUserLockout.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout@192d3247</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePage.errorElementAtStart()'><b>errorElementAtStart</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePage</td>
+<td><div><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@data-test=&apos;error&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69fd1d3a4a0cfacb2187db47aedaf477, findElement {using=xpath, value=//h3[@data-test=&apos;error&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43173/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69fd1d3a4a0cfacb2187db47aedaf477
+	at io.railflow.blazetest.samples.testng.webdriver.TestHomePage.errorElementAtStart(TestHomePage.java:71)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1732005742", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1732005742'><pre>java.lang.AssertionError: Unexpected exception (org.openqa.selenium.NoSuchElementException): no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@data-test=&apos;error&apos;]&quot;}
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2.0-32-generic&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69fd1d3a4a0cfacb2187db47aedaf477, findElement {using=xpath, value=//h3[@data-test=&apos;error&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.88 (be6afae47212..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43173/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69fd1d3a4a0cfacb2187db47aedaf477
+	at org.testng.Assert.fail(Assert.java:94)
+	at io.railflow.blazetest.samples.testng.webdriver.TestHomePage.errorElementAtStart(TestHomePage.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePage@52f759d7</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.image()'><b>image</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg]
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.image(TestShoppingCartBase.java:101)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1709913495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1709913495'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.image(TestShoppingCartBase.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack@5891e32e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.image()'><b>image</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg]
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.image(TestShoppingCartBase.java:101)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1680139795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1680139795'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/bike-light-1200x1500.37c843b0.jpg]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.image(TestShoppingCartBase.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight@cb0ed20</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.image()'><b>image</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg]
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.image(TestShoppingCartBase.java:101)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace767535474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace767535474'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg] but found [https://www.saucedemo.com/static/media/bolt-shirt-1200x1500.c2599ac5.jpg]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.shoppingcart.TestShoppingCartBase.image(TestShoppingCartBase.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt@8e24743</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameEmptyPassword()'><b>invalidUsernameEmptyPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Password is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameEmptyPassword(TestLoginEmptyCredentials.java:53)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1157484092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157484092'><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Password is required]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameEmptyPassword(TestLoginEmptyCredentials.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameMissingPassword()'><b>invalidUsernameMissingPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Password is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameMissingPassword(TestLoginEmptyCredentials.java:33)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace510207317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510207317'><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Password is required]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.invalidUsernameMissingPassword(TestLoginEmptyCredentials.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.missingPassword()'><b>missingPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Password is required] but found [Epic sadface: Sorry, this user has been locked out.]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.missingPassword(TestLoginUserLockout.java:27)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1696136701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1696136701'><pre>java.lang.AssertionError: expected [Epic sadface: Password is required] but found [Epic sadface: Sorry, this user has been locked out.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.missingPassword(TestLoginUserLockout.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout@192d3247</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameEmptyPassword()'><b>missingUsernameEmptyPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameEmptyPassword(TestLoginEmptyCredentials.java:28)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051890381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051890381'><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameEmptyPassword(TestLoginEmptyCredentials.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameInvalidPassword()'><b>missingUsernameInvalidPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameInvalidPassword(TestLoginEmptyCredentials.java:38)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620643420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620643420'><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameInvalidPassword(TestLoginEmptyCredentials.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameMissingPassword()'><b>missingUsernameMissingPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameMissingPassword(TestLoginEmptyCredentials.java:23)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace397639322", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace397639322'><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Username is required]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.missingUsernameMissingPassword(TestLoginEmptyCredentials.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.userLockedOut()'><b>userLockedOut</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout</td>
+<td><div><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Sorry, this user has been locked out.]
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.userLockedOut(TestLoginUserLockout.java:37)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2069678360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2069678360'><pre>java.lang.AssertionError: expected [Epic sadface: Username and password do not match any user in this service] but found [Epic sadface: Sorry, this user has been locked out.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginBase.loginFailure(TestLoginBase.java:52)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.loginFailure(TestLoginUserLockout.java:22)
+	at io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout.userLockedOut(TestLoginUserLockout.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginUserLockout@192d3247</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.add()'><b>add</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack@43bd930a</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.add()'><b>add</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight@33723e30</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.add()'><b>add</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt@64f6106c</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.add()'><b>add</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack@5891e32e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.add()'><b>add</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight@cb0ed20</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.add()'><b>add</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt@8e24743</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput.attribute()'><b>attribute</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput<br>Parameters: autocorrect, off</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput@23fe1d71</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput.attribute()'><b>attribute</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput<br>Parameters: autocapitalize, none</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput@23fe1d71</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput.attribute()'><b>attribute</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput<br>Parameters: name, password</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput@23fe1d71</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput.attribute()'><b>attribute</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput<br>Parameters: placeholder, Password</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput@23fe1d71</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput.attribute()'><b>attribute</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput<br>Parameters: type, password</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput@23fe1d71</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput.autoCapitalize()'><b>autoCapitalize</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput@28ac3dc3</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput.autoCorrect()'><b>autoCorrect</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput@28ac3dc3</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePage.description()'><b>description</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePage@52f759d7</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.description()'><b>description</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.emptyUsernameEmptyPassword()'><b>emptyUsernameEmptyPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.emptyUsernameInvalidPassword()'><b>emptyUsernameInvalidPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials.emptyUsernameMissingPassword()'><b>emptyUsernameMissingPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginEmptyCredentials@7cbd213e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.facebookLink()'><b>facebookLink</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.facebookText()'><b>facebookText</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.image()'><b>image</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack@43bd930a</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.image()'><b>image</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight@33723e30</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.image()'><b>image</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt@64f6106c</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.invalidUsernameInvalidPassword()'><b>invalidUsernameInvalidPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.inventoryItemCount()'><b>inventoryItemCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.inventoryItemCount()'><b>inventoryItemCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.inventoryItemDescCount()'><b>inventoryItemDescCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.inventoryItemDescCount()'><b>inventoryItemDescCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.inventoryItemDescriptionCount()'><b>inventoryItemDescriptionCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.inventoryItemDescriptionCount()'><b>inventoryItemDescriptionCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.inventoryItemImgCount()'><b>inventoryItemImgCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.inventoryItemImgCount()'><b>inventoryItemImgCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.inventoryItemLabelCount()'><b>inventoryItemLabelCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.inventoryItemLabelCount()'><b>inventoryItemLabelCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.inventoryItemNameCount()'><b>inventoryItemNameCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.inventoryItemNameCount()'><b>inventoryItemNameCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.inventoryItemPriceCount()'><b>inventoryItemPriceCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.inventoryItemPriceCount()'><b>inventoryItemPriceCount</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.linkedinLink()'><b>linkedinLink</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.linkedinText()'><b>linkedinText</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.lockedOutUserInvliadPassword()'><b>lockedOutUserInvliadPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.longPassword()'><b>longPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.longUsername()'><b>longUsername</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePage.manifestLink()'><b>manifestLink</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePage@52f759d7</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.manifestLink()'><b>manifestLink</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton@74a10858</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack@43bd930a</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight@33723e30</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput@28ac3dc3</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt@64f6106c</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack@5891e32e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight@cb0ed20</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.name()'><b>name</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt@8e24743</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePage.noErrorElementAtStart()'><b>noErrorElementAtStart</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePage@52f759d7</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.passwordWithNumbers()'><b>passwordWithNumbers</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.passwordWithSpaces()'><b>passwordWithSpaces</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.passwordWithSpecialCharacters()'><b>passwordWithSpecialCharacters</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.performanceGlitchUserInvliadPassword()'><b>performanceGlitchUserInvliadPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput.placeholder()'><b>placeholder</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput@28ac3dc3</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack.price()'><b>price</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBackPack@43bd930a</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight.price()'><b>price</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBikeLight@33723e30</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt.price()'><b>price</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserBoltTShirt@64f6106c</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack.price()'><b>price</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBackPack@5891e32e</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight.price()'><b>price</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBikeLight@cb0ed20</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt.price()'><b>price</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserBoltTShirt@8e24743</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory.pricebar()'><b>pricebar</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.standard.TestShoppingCartStandardUserInventory@553a3d88</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory.pricebar()'><b>pricebar</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.shoppingcart.problem.TestShoppingCartProblemUserInventory@7a30d1e6</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.problemUserInvliadPassword()'><b>problemUserInvliadPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePage.robots()'><b>robots</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePage@52f759d7</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePage.stylesheetLink()'><b>stylesheetLink</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePage@52f759d7</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.stylesheetLink()'><b>stylesheetLink</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput.text()'><b>text</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePagePasswordInput@23fe1d71</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput.text()'><b>text</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput@28ac3dc3</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePage.title()'><b>title</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePage</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePage@52f759d7</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.title()'><b>title</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.twitterLink()'><b>twitterLink</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess.twitterText()'><b>twitterText</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginSuccess@3ecd23d9</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton.type()'><b>type</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton@74a10858</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput.type()'><b>type</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageUsernameInput@28ac3dc3</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.usernameWithNumbers()'><b>usernameWithNumbers</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.usernameWithSpaces()'><b>usernameWithSpaces</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.usernameWithSpecialCharacters()'><b>usernameWithSpecialCharacters</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials.validUserInvliadPassword()'><b>validUserInvliadPassword</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestLoginInvalidCredentials@569cfc36</td></tr>
+<tr>
+<td title='io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton.value()'><b>value</b><br>Test class: io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton</td>
+<td></td>
+<td>0</td>
+<td>io.railflow.blazetest.samples.testng.webdriver.TestHomePageLoginButton@74a10858</td></tr>
+</table><p>
+</body>
+</html>
